@@ -62,13 +62,13 @@ call to print the function's return to the web page
 ***/
 function printQuote() {
   var result = getRandomQuote(quotes); // Calls and stores the getRandomQuote in a variable
-  var message = '<p class="quote" span class = "quote">' + result.quote + '</p>';
+  var message = '<p span class = "quote">' + result.quote + '</p>';
   if (result.source) {
-  message += '<p class = "source" span class = "source">' + result.source + '</p>'};
+  message += '<p span class = "source">' + result.source + '</p>'};
   if (result.year) {
-  message += '<p class = "year" span class = "year">' + result.year + '</p>'};
+  message += '<p span class = "year">' + result.year + '</p>'};
   if (result.sub){
-  message += '<p class = "sub" span class = "citation">' + result.sub + '</p>'};
+  message += '<p span class = "citation">' + result.sub + '</p>'};
 
   document.getElementById('quote-box').innerHTML = message; 
 
